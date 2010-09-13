@@ -1,0 +1,7 @@
+Book Load (0.2ms)  SELECT books.name, books.id, books.author_id, books.publisher_id FROM "books" INNER JOIN "slugs" ON "slugs".sluggable_id = "books".id AND "slugs".sluggable_type = 'Book' WHERE ("slugs"."sequence" = 1 AND "slugs"."name" = 'the-guide-to-stuff') LIMIT 1
+Author Load (0.2ms)  SELECT * FROM "authors" WHERE ("authors"."id" = 1) 
+Publisher Load (0.2ms)  SELECT * FROM "publishers" WHERE ("publishers"."id" = 1) 
+Slug Load (0.2ms)  SELECT "slugs".* FROM "slugs" WHERE ("slugs"."sluggable_id" = 1 and "slugs"."sluggable_type" = 'Book') ORDER BY id DESC
+UnfriendlyBook Load (0.1ms)  SELECT unfriendly_books.name, unfriendly_books.id, unfriendly_books.author_id, unfriendly_books.publisher_id FROM "unfriendly_books" WHERE ("unfriendly_books"."id" = 1) 
+Author Load (0.1ms)  SELECT * FROM "authors" WHERE ("authors"."id" = 1) 
+Publisher Load (0.1ms)  SELECT * FROM "publishers" WHERE ("publishers"."id" = 1) 

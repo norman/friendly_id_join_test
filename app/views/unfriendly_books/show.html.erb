@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @unfriendly_book.name %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%=h @unfriendly_book.publisher_id %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @unfriendly_book.author_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_unfriendly_book_path(@unfriendly_book) %> |
+<%= link_to 'Back', unfriendly_books_path %>

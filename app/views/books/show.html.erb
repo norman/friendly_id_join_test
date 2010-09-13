@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @book.name %>
+</p>
+
+<p>
+  <b>Cached slug:</b>
+  <%=h @book.cached_slug %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%=h @book.publisher_id %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @book.author_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @publisher.name %>
+</p>
+
+<p>
+  <b>Cached slug:</b>
+  <%=h @publisher.cached_slug %>
+</p>
+
+
+<%= link_to 'Edit', edit_publisher_path(@publisher) %> |
+<%= link_to 'Back', publishers_path %>

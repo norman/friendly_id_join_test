@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  cached_slug: MyString
+  publisher_id: 1
+  author_id: 1
+
+two:
+  name: MyString
+  cached_slug: MyString
+  publisher_id: 1
+  author_id: 1
